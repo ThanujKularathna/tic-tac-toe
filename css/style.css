@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  /* box-sizing: border-box; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  font-weight: 900;
+  border: 2px solid black;
+  
+  
+}
+
+.grid-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  font-size: 110px;
+  border: 2px solid black;
+
+
+}
+
+.grid-button:active{
+  background-color: green;
+
+
+}
+
+
