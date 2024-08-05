@@ -2,11 +2,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
   /* box-sizing: border-box; */
 }
+
 
 .grid-container {
   display: grid;
@@ -14,11 +16,9 @@ body {
   grid-template-rows: repeat(3, 100px);
   font-weight: 900;
   border: 2px solid black;
-  
-  
 }
 
-.grid-button {
+.grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,39 @@ body {
   color: white;
   font-size: 110px;
   border: 2px solid black;
+  cursor: pointer;
 
+  
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
+  
+  
 
 }
 
-.grid-button:active{
-  background-color: green;
 
 
+.reset-btn{
+  margin-top: 15px;
+  height: 50px;
+  width: 200px;
+  background-color: lightblue;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.reset-btn:hover,
+.reset-btn:focus{
+  background-color: rgb(104, 201, 233);
 }
 
 
+.msg{
+  font-size: 25px;
+  padding: 10px ;
+  margin-bottom: 20px;
+  
+}
